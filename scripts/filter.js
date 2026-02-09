@@ -47,9 +47,7 @@ const emails = [
 ];
 
 const newE = emails.filter((e) => {
-  if (e.includes("@")) { // .includes() is a JS method that checks if a string has a certain value.
-    return e;
-  };
+  return e.includes("@");// .includes() is a JS method that checks if a string has a certain value.
 });
 console.log(newE);
 
@@ -84,9 +82,7 @@ const products = [
 ];
 
 const p = products.filter(function (product) {
-  if (product.price <= 500 && product.inStock === true) {
-    return product;
-  };
+  return product.price <= 500 && product.inStock;
 });
 console.log(p);
 
